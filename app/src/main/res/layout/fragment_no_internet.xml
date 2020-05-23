@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoInternetFragment"
+    android:id="@+id/no_internet_background"
+    android:background="@drawable/no_internet"
+    >
+
+    <TextView
+        android:id="@+id/nointernettxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/montserrat"
+        android:text="You're offline"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:fontFamily="@font/montserrat" />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/retry"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
+        android:textColor="#9885D5"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/nointernettxt"
+        android:text="Retry"
+        />
+
+</RelativeLayout>
